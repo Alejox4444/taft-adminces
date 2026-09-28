@@ -1,11 +1,10 @@
-package com.tatf.soluciones;
+package com.tatf.tests;
 
 import com.tatf.core.browser.BrowserFactory;
 import com.tatf.core.browser.IBrowser;
-import com.tatf.core.element.Element;
 import com.tatf.core.verification.IVerify;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class AdminCESTest {
@@ -24,13 +23,13 @@ public class AdminCESTest {
         browser.find().xpath("//button[contains(text(),'OK')]").click();
     }
 
-    @BeforeAll
-    static void beforeAll() {
+    @BeforeEach
+    public void beforeAll() {
         browser = BrowserFactory.getBrowser(true);
     }
 
-    @AfterAll
-    static void afterAll() {
+    @AfterEach
+    public void afterEach() {
         BrowserFactory.quitBrowser();
     }
 
