@@ -1,6 +1,6 @@
 package com.tatf.adminces.modules.viewUser.task;
 
-import com.tatf.adminces.modules.viewUser.data.ViewUserData;
+//import com.tatf.adminces.modules.viewUser.data.ViewUserData;
 import com.tatf.adminces.modules.viewUser.pom.ViewUserPO;
 import com.tatf.core.browser.IBrowser;
 
@@ -13,9 +13,9 @@ public class ViewUserTask {
         this.viewUser = new ViewUserPO(this.browser);
     }
 
-    public void deleteTester() {
+    public void deleteTester(String emailborrar) {
         viewUser.clickViewUsersLink();
-        viewUser.clickDeleteUser(ViewUserData.borrar);
+        viewUser.clickDeleteUser(emailborrar);
         viewUser.clickYes();
     }
 }

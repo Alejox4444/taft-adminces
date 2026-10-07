@@ -11,7 +11,7 @@ public class CreateUserPO {
     private final String passwordInput = "inputPassword";
     private final String countryInput = "inputCountry";
     private final String registerButton = "btnRegister";
-    private final String testerOption = "testerJunior";
+ //   private final String testerOption = "testerJunior";
 
 
     public CreateUserPO(IBrowser browser) {
@@ -42,7 +42,7 @@ public class CreateUserPO {
         this.browser.find().id(registerButton).click();
     }
 
-    public void selectTesterJunior() {
+    public void selectTesterJunior(String testerOption) {
         this.browser.find().id(testerOption).click();
     }
 

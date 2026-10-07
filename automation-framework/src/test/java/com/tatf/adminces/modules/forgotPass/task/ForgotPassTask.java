@@ -1,9 +1,8 @@
 package com.tatf.adminces.modules.forgotPass.task;
 
-import com.tatf.adminces.modules.forgotPass.data.ForgotPassData;
+//import com.tatf.adminces.modules.forgotPass.data.ForgotPassData;
 import com.tatf.adminces.modules.forgotPass.pom.ForgotPassPO;
 import com.tatf.core.browser.IBrowser;
-import com.tatf.core.verification.IVerify;
 
 public class ForgotPassTask {
     private final IBrowser browser;
@@ -15,12 +14,12 @@ public class ForgotPassTask {
 
     }
 
-    public void resetPassword() {
+    public void resetPassword(String emailadmin, String contrasenaadmin) {
 
         admin.clickForgotPasswordLink();
-        admin.enterEmail(ForgotPassData.emailadmin);
-        admin.enterPassword(ForgotPassData.contrasena);
-        admin.enterRepeatPassword(ForgotPassData.contrasena);
+        admin.enterEmail(emailadmin);
+        admin.enterPassword(contrasenaadmin);
+        admin.enterRepeatPassword(contrasenaadmin);
         admin.clickReset();
 
     }

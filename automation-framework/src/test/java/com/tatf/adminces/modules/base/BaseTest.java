@@ -10,7 +10,7 @@ public class BaseTest {
 
     @BeforeEach
     public void configuration() {
-        browser = BrowserFactory.getBrowser(true);
+        browser = BrowserFactory.getBrowser();
     }
 
     @AfterEach

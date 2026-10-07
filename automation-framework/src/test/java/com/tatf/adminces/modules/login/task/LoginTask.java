@@ -15,10 +15,10 @@ public class LoginTask {
 
     }
 
-    public void logInAsAdmin() {
+    public void logInAsAdmin(String emailadmin, String contrasenaadmin) {
         login.clickLoginLink();
-        login.enterEmail(LoginData.emailadmin);
-        login.enterPassword(LoginData.contrasenaadmin);
+        login.enterEmail(emailadmin);
+        login.enterPassword(contrasenaadmin);
         login.clickLogin();
         verifyMessage(LoginData.sesioniniciada, "No se mostró el mensaje de inicio de sesión.");
         login.clickOk();
