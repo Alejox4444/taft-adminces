@@ -18,7 +18,7 @@ public class CreateUserTask {
         createUser.enterEmail(email);
         createUser.enterPassword(contrasena);
         createUser.selectCountry(pais);
-        createUser.selectTesterJunior(tipotester);
+        createUser.selectTester(tipotester);
         createUser.clickRegister();
 
     }

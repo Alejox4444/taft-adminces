@@ -1,17 +1,16 @@
 package com.tatf.adminces.modules.home.task;
 
-import com.tatf.adminces.modules.home.data.HomeData;
-import com.tatf.adminces.modules.home.pom.HomePassPO;
+import com.tatf.adminces.modules.home.pom.HomePO;
 import com.tatf.core.browser.IBrowser;
 import com.tatf.core.verification.IVerify;
 
 public class HomeTask {
     private final IBrowser browser;
-    private final HomePassPO home;
+    private final HomePO home;
 
     public HomeTask(IBrowser browser) {
         this.browser = browser;
-        this.home = new HomePassPO(this.browser);
+        this.home = new HomePO(this.browser);
     }
 
     public void clickRegister() {

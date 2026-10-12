@@ -1,6 +1,5 @@
 package com.tatf.adminces.modules.forgotPass.task;
 
-//import com.tatf.adminces.modules.forgotPass.data.ForgotPassData;
 import com.tatf.adminces.modules.forgotPass.pom.ForgotPassPO;
 import com.tatf.core.browser.IBrowser;
 

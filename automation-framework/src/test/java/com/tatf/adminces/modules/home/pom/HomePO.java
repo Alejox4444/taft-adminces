@@ -2,7 +2,7 @@ package com.tatf.adminces.modules.home.pom;
 
 import com.tatf.core.browser.IBrowser;
 
-public class HomePassPO {
+public class HomePO {
     private final IBrowser browser;
 
     private final String loginLink = "a[href='/adminces/login']";
@@ -12,7 +12,7 @@ public class HomePassPO {
     private final String alertMessage = "swal2-html-container";
 
 
-    public HomePassPO(IBrowser browser) {
+    public HomePO(IBrowser browser) {
         this.browser = browser;
     }
 

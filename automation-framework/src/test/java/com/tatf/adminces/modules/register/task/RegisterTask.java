@@ -1,6 +1,5 @@
 package com.tatf.adminces.modules.register.task;
 
-//import com.tatf.adminces.modules.register.data.RegisterData;
 import com.tatf.adminces.modules.register.pom.RegisterPO;
 import com.tatf.core.browser.IBrowser;
 

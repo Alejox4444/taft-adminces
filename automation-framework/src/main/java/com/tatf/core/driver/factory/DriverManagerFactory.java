@@ -1,6 +1,7 @@
 package com.tatf.core.driver.factory;
 
 import com.tatf.core.driver.manager.ChromeDriver;
+import com.tatf.core.driver.manager.FirefoxDriver;
 import com.tatf.core.driver.manager.DriverManager;
 import org.openqa.selenium.WebDriver;
 
@@ -20,6 +21,10 @@ public class DriverManagerFactory {
             case CHROME:
                 dm = new ChromeDriver();
                 break;
+            case FIREFOX:
+                dm = new FirefoxDriver();
+                break;
+
             default:
                 throw new IllegalArgumentException("Tipo de driver no soportado: " + type);
         }

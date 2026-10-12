@@ -13,6 +13,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
+import org.junit.jupiter.api.Tag;
 
 public class AdminCESTest extends BaseTest {
 
@@ -43,6 +44,7 @@ public class AdminCESTest extends BaseTest {
     }
 
     @ParameterizedTest
+    @Tag("CreaUsuario")
     @DisplayName("Crea un usuario Administrador")
     @CsvFileSource(
             resources = "/datos_crearAdmin.csv",
@@ -68,6 +70,8 @@ public class AdminCESTest extends BaseTest {
 
 
     @ParameterizedTest
+    @Tag("LoginComoAdmin")
+    @Tag("CreaUsuario")
     @DisplayName("Crea un usuario Tester")
     @CsvFileSource(
             resources = "/datos_crearTester.csv",
@@ -81,6 +85,7 @@ public class AdminCESTest extends BaseTest {
     }
 
     @ParameterizedTest
+    @Tag("LoginComoAdmin")
     @DisplayName("Elimina un usuario Tester")
     @CsvFileSource(
             resources = "/datos_borrar.csv",
